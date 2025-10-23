@@ -1,4 +1,4 @@
-port {
+#port {
     width: 100%;
     margin-top: 30vh;
     overflow: hidden;
@@ -42,9 +42,9 @@ port {
 
         .port__item {
             width: 500px;
-            height: 70vh;
+            height: auto;
             background-color: var(--subBg100);
-            padding: 2.5rem;
+            padding: 1rem 2.5rem;
             margin-right: 20px;
 
             @media (max-width: 800px) {
@@ -117,6 +117,11 @@ port {
             }
             .desc {
                 font-size: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
             .site {
                 border: 1px solid var(--black100);
